@@ -84,6 +84,14 @@ export default function ServicesPage() {
           </Card>
         ))}
       </div>
+      <div className="mt-16 text-center">
+        <Button asChild size="lg">
+          <Link href="/about">
+            Explore what each service covers
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }
