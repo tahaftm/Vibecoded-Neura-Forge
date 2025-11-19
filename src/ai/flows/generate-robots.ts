@@ -28,7 +28,7 @@ const generateRobotsFlow = ai.defineFlow(
   },
   async () => {
     const {media} = await ai.generate({
-      model: 'googleai/imagen-4.0-fast-generate-001',
+      model: 'openai/dall-e-3',
       prompt: `Generate an image of a neon robot reflecting automation and machine learning themes.`,
     });
 
