@@ -75,6 +75,12 @@ export default function Header() {
             >
               About
             </Link>
+            <Link
+              href="/services"
+              className="text-foreground/60 transition-colors hover:text-foreground/80"
+            >
+              Services
+            </Link>
           </nav>
         </div>
       </div>
