@@ -70,6 +70,12 @@ export default function Header() {
           </Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link
+              href="/"
+              className="text-foreground/60 transition-colors hover:text-foreground/80"
+            >
+              Home
+            </Link>
+            <Link
               href="/about"
               className="text-foreground/60 transition-colors hover:text-foreground/80"
             >
