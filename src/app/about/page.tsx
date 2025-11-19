@@ -68,7 +68,7 @@ export default function AboutPage() {
           {services.map(service => (
             <Card
               key={service.title}
-              className="border-2 border-primary/10 bg-card shadow-lg shadow-primary/5"
+              className="border-2 border-primary bg-card"
             >
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">
