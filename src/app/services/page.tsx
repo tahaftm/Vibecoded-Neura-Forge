@@ -42,6 +42,11 @@ const services = [
     fullDescription:
       'At NeuraForge, we help entrepreneurs create professional, high-performance stores that look great, load fast, and convert visitors into customers. Whether you need a custom WordPress store with powerful plugins or a fully optimized Shopify shop with automation, tracking, and integrations, we handle everything end-to-end. From product setup and theme customization to payment gateways and backend workflows, we ensure your store is easy to manage and ready to scale. Our goal is to give business owners an online presence that is clean, modern, and built to grow.',
   },
+  {
+    title: 'Custom Service',
+    description: 'Have a unique requirement? Contact us for a custom solution tailored to your needs.',
+    fullDescription: 'Have a unique requirement? Contact us for a custom solution tailored to your needs. We can discuss your project and provide a personalized quote.'
+  }
 ];
 
 export default function ServicesPage() {
@@ -60,7 +65,7 @@ export default function ServicesPage() {
         {services.map(service => (
           <Card
             key={service.title}
-            className="flex flex-col border-2 border-primary/10 bg-card shadow-lg shadow-primary/5"
+            className="flex flex-col border-2 border-primary bg-card"
           >
             <CardHeader>
               <CardTitle className="text-2xl text-primary">{service.title}</CardTitle>
