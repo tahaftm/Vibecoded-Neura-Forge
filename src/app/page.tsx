@@ -1,14 +1,14 @@
 import CEOProfile from '@/components/ceo-profile';
 import FaqSection from '@/components/faq-section';
 import HeroSection from '@/components/hero-section';
-import RobotGallery from '@/components/robot-gallery';
+import Testimonials from '@/components/testimonials';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <CEOProfile />
-      <RobotGallery />
+      <Testimonials />
       <FaqSection />
     </>
   );

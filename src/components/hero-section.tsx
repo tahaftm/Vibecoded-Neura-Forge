@@ -7,11 +7,11 @@ import {useEffect, useState} from 'react';
 import {Button} from '@/components/ui/button';
 
 const services = [
-  'AI Agents Development.',
-  'Workflow Automations.',
-  'Data Cleaning & Visualization.',
-  'WordPress & Shopify Stores.',
-  'Machine Learning Models.',
+  'Positive Client Feedback.',
+  'Glowing Testimonials.',
+  'Success Stories.',
+  'Happy Customers.',
+  'Proven Results.',
 ];
 
 export default function HeroSection() {
