@@ -54,6 +54,16 @@ export default async function FaqSection() {
         answer:
           'Our process begins with a consultation to understand your needs, followed by a proposal, development, and deployment. We ensure collaboration at every step.',
       },
+      {
+        question: 'Why should you ask us for service?',
+        answer:
+          'We are committed to delivering high-quality, custom solutions that are tailored to your unique needs. Our team of experts is dedicated to helping you achieve your business goals through innovation and technology.',
+      },
+      {
+        question: 'How to get started?',
+        answer:
+          'To get started, please visit our services page and fill out the form for the service you are interested in. We will contact you in no time to discuss your project.',
+      },
     ];
   }
 
