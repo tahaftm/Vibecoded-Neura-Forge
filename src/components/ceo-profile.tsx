@@ -21,7 +21,7 @@ export default function CEOProfile() {
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
           Meet Our Founder
         </h2>
-        <Card className="overflow-hidden border-2 border-primary/20 shadow-lg shadow-primary/10">
+        <Card className="overflow-hidden border-2 border-primary bg-card">
           <div className="grid md:grid-cols-3">
             <div className="relative h-64 w-full md:h-full">
               {ceoImage && (
