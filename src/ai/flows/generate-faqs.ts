@@ -38,7 +38,6 @@ const generateFAQsFlow = ai.defineFlow(
     name: 'generateFAQsFlow',
     inputSchema: GenerateFAQsInputSchema,
     outputSchema: GenerateFAQsOutputSchema,
-    model: 'googleai/gemini-1.5-flash',
   },
   async input => {
     const {output} = await prompt(input);
