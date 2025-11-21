@@ -40,6 +40,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.imageupload.app',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
