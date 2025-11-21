@@ -14,6 +14,30 @@ const services = [
   'Proven Results.',
 ];
 
+const AnimatedFibers = () => {
+  const fiberCount = 20;
+  return (
+    <div className="absolute inset-0 -z-10 overflow-hidden">
+      {Array.from({length: fiberCount}).map((_, i) => (
+        <div
+          key={i}
+          className="fiber"
+          style={
+            {
+              '--delay': `${Math.random() * 10}s`,
+              '--duration': `${5 + Math.random() * 5}s`,
+              '--start-x': `${-10 + Math.random() * 20}%`,
+              '--start-y': `${Math.random() * 100}%`,
+              '--end-x': `${90 + Math.random() * 20}%`,
+              '--end-y': `${Math.random() * 100}%`,
+            } as React.CSSProperties
+          }
+        ></div>
+      ))}
+    </div>
+  );
+};
+
 export default function HeroSection() {
   const [serviceIndex, setServiceIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
@@ -46,6 +70,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative w-full overflow-hidden py-24 md:py-32 lg:py-40">
+      <AnimatedFibers />
       <div className="absolute inset-0 -z-10 m-auto h-[450px] w-[450px] bg-primary/10 rounded-full blur-[120px] filter"></div>
 
       <div className="container mx-auto max-w-5xl px-4 text-center">
