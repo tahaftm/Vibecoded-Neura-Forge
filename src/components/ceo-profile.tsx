@@ -30,7 +30,6 @@ export default function CEOProfile() {
                   alt={ceoImage.description}
                   fill
                   style={{objectFit: 'cover', objectPosition: 'top'}}
-                  className="grayscale filter transition-all duration-300 hover:grayscale-0"
                   data-ai-hint={ceoImage.imageHint}
                 />
               )}
