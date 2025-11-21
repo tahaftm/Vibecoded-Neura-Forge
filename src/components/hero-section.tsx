@@ -1,6 +1,6 @@
 "use client";
 
-import {ArrowRight} from 'lucide-react';
+import {ArrowRight, Instagram, Linkedin, Mail} from 'lucide-react';
 import Link from 'next/link';
 import {useEffect, useState} from 'react';
 
@@ -86,13 +86,34 @@ export default function HeroSection() {
           We provide bespoke AI solutions, automation, and web development to
           propel your business into the future.
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-col items-center justify-center gap-6">
           <Link href="/about" passHref>
             <Button size="lg">
               About Us
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://www.instagram.com/neura.forge.services"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/109971140/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
+            <Link href="mailto:neuraforgue@gmail.com" aria-label="Email">
+              <Mail className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
